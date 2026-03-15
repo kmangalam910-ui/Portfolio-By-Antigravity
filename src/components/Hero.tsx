@@ -76,7 +76,7 @@ export function Hero() {
             <div className="w-full h-full rounded-[2rem] overflow-hidden bg-black/40 relative flex justify-center items-center border border-white/10">
               {/* Profile Image: User should save image as public/profile.png */}
               <img 
-                src={profilePic.src} 
+                src=/profile.png 
                 alt="Mangalam Kumar" 
                 className="w-full h-full object-cover transition-all duration-700 filter grayscale-[20%] contrast-125 brightness-110 group-hover:grayscale-0 group-hover:scale-105" 
               />
