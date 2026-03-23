@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { Scene3D } from "./Scene3D";
 import { ArrowRight, Terminal } from "lucide-react";
+import profilePic from "../../public/profile.png";
 
 export function Hero() {
   return (
@@ -74,9 +75,9 @@ export function Hero() {
             className="relative w-64 h-64 md:w-[400px] md:h-[400px] rounded-[2rem] p-[2px] bg-gradient-to-br from-neon-cyan/50 via-transparent to-purple-600/50 shadow-[0_0_50px_rgba(0,240,255,0.2)] backdrop-blur-sm z-10 transition-transform hover:scale-105 duration-500 overflow-hidden group"
           >
             <div className="w-full h-full rounded-[2rem] overflow-hidden bg-black/40 relative flex justify-center items-center border border-white/10">
-              {/* Profile Image: User should save image as public/profile.png */}
+              {/* Profile Image */}
               <img 
-                src=/profile.png 
+                src={profilePic.src}
                 alt="Mangalam Kumar" 
                 className="w-full h-full object-cover transition-all duration-700 filter grayscale-[20%] contrast-125 brightness-110 group-hover:grayscale-0 group-hover:scale-105" 
               />
